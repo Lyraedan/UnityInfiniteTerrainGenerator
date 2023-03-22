@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1142140480493153763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142140480493153762}
+  - component: {fileID: 1142140480493153764}
+  - component: {fileID: 1142140480493153765}
+  - component: {fileID: 62975055692467745}
+  m_Layer: 0
+  m_Name: ChunkBackup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1142140480493153762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142140480493153763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1142140480493153764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142140480493153763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c8508400bf5b5488d36fe9a2b11d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generator: {fileID: 0}
+  noiseSettings:
+  - noiseType: 2
+    enabled: 1
+    interations: 1
+    strength: 10
+    roughness: 2
+    scale: 0.29
+    persistance: 1
+    lacuarity: 1
+    minValue: -1.26
+  - noiseType: 0
+    enabled: 1
+    interations: 1
+    strength: 1
+    roughness: 13.85
+    scale: 2
+    persistance: 1
+    lacuarity: 1
+    minValue: 5.13
+  - noiseType: 3
+    enabled: 1
+    interations: 4
+    strength: 1.26
+    roughness: 1
+    scale: -1.35
+    persistance: 1
+    lacuarity: 1
+    minValue: -2
+  worldSpace: {x: 0, y: 0, z: 0}
+  noiseTexture: {fileID: 0}
+  enableErosion: 1
+  numberOfIterations: 100
+  gravity: 4
+  lifetime: 30
+  inertia: 0.05
+  sedimentCapacityMultiplier: 4
+--- !u!114 &1142140480493153765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142140480493153763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b4d1bcd7d880b4d907c98fdc6d72a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorSettings: {fileID: 0}
+  vertices: []
+  tris: 
+  normals: []
+  uvs: []
+  meshRenderer: {fileID: 0}
+  showGrid: 0
+  showVerticeValues: 0
+--- !u!114 &62975055692467745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142140480493153763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b09a8848c0b58049b140ca83e21bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureResolution: 50
+  texture: {fileID: 0}
+  baseMaterial: {fileID: 2100000, guid: bb0fd3a119655ee4fbb41e0a4d06fbea, type: 2}
+  material: {fileID: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.107634984, g: 0.0085439505, b: 0.6037736, a: 1}
+    key1: {r: 0, g: 0.015195131, b: 1, a: 1}
+    key2: {r: 1, g: 0.79383516, b: 0, a: 0}
+    key3: {r: 0.042322345, g: 0.5377358, b: 0, a: 0}
+    key4: {r: 0, g: 0.3301887, b: 0, a: 0}
+    key5: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+    key6: {r: 0.5391878, g: 0.5391878, b: 0.5391878, a: 0}
+    key7: {r: 1, g: 1, b: 1, a: 0}
+    ctime0: 2120
+    ctime1: 2891
+    ctime2: 4433
+    ctime3: 7517
+    ctime4: 15998
+    ctime5: 22937
+    ctime6: 50693
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
